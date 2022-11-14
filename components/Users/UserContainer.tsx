@@ -2,17 +2,33 @@ import * as React from 'react';
 import { Paper, ThemeProvider } from '@mui/material';
 import { UserCard } from './UserCard';
 import { theme } from '../Theme/Theme';
-import users from '../../users.json';
+import usersData from '../../users.json';
 import { UserHeader } from './UserHeader';
 import { useState, useEffect } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import { LIGHT_GREY } from '../Theme/Colors';
 
+type User = {
+  firstName: string;
+  lastName: string;
+  role: string;
+  email: string;
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+  phone: string;
+  createdAt: string;
+  lastLoggedIn: string;
+};
+
 export default function UserContainer() {
   const [isLoading, setIsLoading] = useState(true);
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     setTimeout(() => {
+      setUsers(usersData);
       setIsLoading(false);
     }, 1000);
   }, []);
