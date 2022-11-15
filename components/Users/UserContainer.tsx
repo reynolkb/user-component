@@ -22,7 +22,7 @@ type User = {
   lastLoggedIn: string;
 };
 
-export default function UserContainer() {
+export const UserContainer = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState<User[]>([]);
 
@@ -44,4 +44,4 @@ export default function UserContainer() {
       </Paper>
     </ThemeProvider>
   );
-}
+};

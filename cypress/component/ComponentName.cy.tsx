@@ -1,4 +1,4 @@
-import UserContainer from '../../components/Users/UserContainer';
+import { UserContainer } from '../../components/Users/UserContainer';
 
 describe('ComponentName.cy.ts', () => {
   it('playground', () => {

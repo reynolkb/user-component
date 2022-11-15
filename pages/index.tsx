@@ -1,4 +1,4 @@
-import UserContainer from '../components/Users/UserContainer';
+import { UserContainer } from '../components/Users/UserContainer';
 import styles from '../styles/Home.module.css';
 import React from 'react';
 
