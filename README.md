@@ -19,11 +19,10 @@ You can run the command below to run the unit tests for the `formatDate` and `fo
 npm test
 ```
 
-Run the commands below in two separate terminals to run [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) end-to-end testing.
+Run the command below to run [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) end-to-end testing.
 
 ```
-npm run dev
-npm run cypress
+npm run e2e
 ```
 
 # Directory Structure
