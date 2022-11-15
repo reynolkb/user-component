@@ -42,11 +42,11 @@ This is the parent folder that contains all of the reusable components.
 
   - This is the folder that contains the `.tsx` files for the reusable User component.
 
-## images
+## public
 
-This is the parent folder for all of the images for the application.
+This is the parent folder for all of the images and icons for the application. You need this for cypress component tests.
 
-- ### icons
+- ### images
   - This contains the group svg and the roles folder.
   - roles
     - This folder is for all of the user role icons.
