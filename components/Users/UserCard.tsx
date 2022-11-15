@@ -64,9 +64,9 @@ export const UserCard: React.FC<UserCardProps> = ({ ...props }) => {
   return (
     <Card elevation={3} sx={{ ml: 2, mr: 2, mt: 2, '&:last-child': { mb: 2 }, borderRadius: '3px' }}>
       <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-        {props.role === 'Administrator' && <Image src={administratorSrc} alt="administrator" onError={handleError} width={50} height={50} priority />}
-        {props.role === 'User' && <Image src={userSrc} alt="user" onError={handleError} width={50} height={50} priority />}
-        {props.role === 'Viewer' && <Image src={viewerSrc} alt="viewer" onError={handleError} width={50} height={50} priority />}
+        {props.role === 'Administrator' && <Image src={administratorSrc} alt="administrator" onError={handleError} width={50} height={50} />}
+        {props.role === 'User' && <Image src={userSrc} alt="user" onError={handleError} width={50} height={50} />}
+        {props.role === 'Viewer' && <Image src={viewerSrc} alt="viewer" onError={handleError} width={50} height={50} />}
         <UserCardBody {...userCardBodyProps} />
         <ExpandMore expand={expanded} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more">
           <ExpandMoreIcon />
