@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material';
 import { theme } from 'components/Theme/Theme';
 import { UserCard } from '../../components/Users/UserCard';
 
-describe('UserContainer.cy.ts', () => {
+describe('UserCard.cy.ts', () => {
   it('mounts component and props are read correctly', () => {
     cy.mount(
       <ThemeProvider theme={theme}>

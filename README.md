@@ -51,6 +51,6 @@ This is the parent folder for all of the images and icons for the application. Y
   - roles
     - This folder is for all of the user role icons.
 
-## tests
+## src
 
-This folder contains basic tests for the `formatDate` and `formatPhoneNumber` functions.
+This folder contains basic tests for the `formatDate` and `formatPhoneNumber` functions. You need to put the jest tests in this folder to resolve type errors with Cypress.

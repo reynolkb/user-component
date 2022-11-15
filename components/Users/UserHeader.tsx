@@ -2,7 +2,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import { Stack } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
-import GroupSVG from '/images/group.svg';
+import GroupSVG from '../../images/group.svg';
 import Image from 'next/image';
 import { Text } from '../Theme/Theme';
 import { WHITE } from '../Theme/Colors';
