@@ -1,7 +1,7 @@
 import { UserContainer } from '../../components/Users/UserContainer';
 
-describe('ComponentName.cy.ts', () => {
-  it('playground', () => {
+describe('UserContainer.cy.ts', () => {
+  it('mounts component', () => {
     cy.mount(<UserContainer />);
   });
 });
